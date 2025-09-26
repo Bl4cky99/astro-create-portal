@@ -11,6 +11,8 @@
         <br/>
         Inspired by React's <code>createPortal</code>, reimagined for Astro's hybrid architecture.
         <br/><br/>
+        <a href="https://www.npmjs.com/package/astro-create-portal">npm</a>
+        &middot;
         <a href="https://github.com/Bl4cky99/astro-create-portal/issues/new?template=bug_report.yml">Report Bug</a>
         &middot;
         <a href="https://github.com/Bl4cky99/astro-create-portal/issues/new?template=feature_request.yml">Request Feature</a>
