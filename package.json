@@ -1,6 +1,6 @@
 {
     "name": "astro-create-portal",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "module",
     "description": "Astro integration providing head-safe and keyed portal components for SSR and static builds.",
     "author": {
@@ -10,11 +10,11 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Bl4cky99/astro-portal.git"
+        "url": "git+https://github.com/Bl4cky99/astro-create-portal.git"
     },
-    "homepage": "https://github.com/Bl4cky99/astro-portal#readme",
+    "homepage": "https://github.com/Bl4cky99/astro-create-portal#readme",
     "bugs": {
-        "url": "https://github.com/Bl4cky99/astro-portal/issues/new?template=bug_report.yml"
+        "url": "https://github.com/Bl4cky99/astro-create-portal/issues/new?template=bug_report.yml"
     },
     "keywords": [
         "astro",

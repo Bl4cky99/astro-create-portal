@@ -2,18 +2,18 @@
 
 <br />
 <div align="center">
-    <a href="https://github.com/Bl4cky99/astro-portal">
+    <a href="https://github.com/Bl4cky99/astro-create-portal">
         <img src="README_ASSETS/logo.png" width="600">
     </a>
-    <h3>astro-portal</h3>
+    <h3>astro-create-portal</h3>
     <p align="center">
         Headless portal primitives for <b>Astro 5+</b> that let you declaratively project markup into the document head and anywhere else in the DOM during SSR and static builds.
         <br/>
         Inspired by React's <code>createPortal</code>, reimagined for Astro's hybrid architecture.
         <br/><br/>
-        <a href="https://github.com/Bl4cky99/astro-portal/issues/new?template=bug_report.yml">Report Bug</a>
+        <a href="https://github.com/Bl4cky99/astro-create-portal/issues/new?template=bug_report.yml">Report Bug</a>
         &middot;
-        <a href="https://github.com/Bl4cky99/astro-portal/issues/new?template=feature_request.yml">Request Feature</a>
+        <a href="https://github.com/Bl4cky99/astro-create-portal/issues/new?template=feature_request.yml">Request Feature</a>
         <br/><br/>
     </p>
 </div>
@@ -58,17 +58,17 @@
 Install with your preferred package manager. The package declares Astro as a peer dependency (>= 5).
 
 ```bash
-npm install astro-portal
+npm install astro-create-portal
 # or
-pnpm add astro-portal
+pnpm add astro-create-portal
 # or
-bun add astro-portal
+bun add astro-create-portal
 ```
 
 Once installed, register the integration in `astro.config.mjs`:
 
 ```ts
-import astroPortal from 'astro-portal';
+import astroPortal from 'astro-create-portal';
 
 export default defineConfig({
   integrations: [astroPortal()],
@@ -138,7 +138,7 @@ During `astro build`, the integration:
 
 ```astro
 ---
-import { HeadPortal, CreatePortal, Portal } from 'astro-portal';
+import { HeadPortal, CreatePortal, Portal } from 'astro-create-portal';
 ---
 
 <html lang="en">
