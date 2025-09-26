@@ -1,0 +1,96 @@
+name: "💡 Feature request"
+description: Propose an enhancement or new capability for astro-portal
+title: "[feat] <short summary>"
+labels: ["enhancement", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your idea! Please describe the **problem**, then your **proposed solution**.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Pre-flight checklist
+      options:
+        - label: I searched existing issues and didn’t find a match.
+          required: true
+        - label: I reviewed the README (Features/FAQ/Examples).
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What’s the underlying need or pain point when using astro-portal?
+      placeholder: |
+        When using astro-portal I need ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Component APIs, runtime behaviors, examples, expected outcome.
+      placeholder: |
+        Proposal:
+        - Update to HeadPortal/CreatePortal/Portal: ...
+        - Example Astro usage:
+        - Expected behavior:
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Existing workarounds or other designs.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope / Area
+      options:
+        - label: HeadPortal (head dedupe / metadata)
+        - label: CreatePortal / Portal API
+        - label: Runtime script / astro:page-load
+        - label: Build pipeline / static transforms
+        - label: Documentation / examples
+        - label: Tooling / release process
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - P0 - Critical / blocks adoption
+        - P1 - High
+        - P2 - Medium
+        - P3 - Low
+    validations:
+      required: false
+
+  - type: dropdown
+    id: willing-to-contribute
+    attributes:
+      label: Willing to submit a PR?
+      options:
+        - "Yes"
+        - "Maybe (with guidance)"
+        - "No"
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Examples, links, prior art.
+    validations:
+      required: false

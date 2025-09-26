@@ -1,0 +1,127 @@
+name: "🐛 Bug report"
+description: Report a reproducible problem with astro-portal
+title: "[bug] <short summary>"
+labels: ["bug", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug!  
+        Please make sure you've searched existing issues and reviewed the README/Examples before filing.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Pre-flight checklist
+      options:
+        - label: I searched existing issues and didn’t find a match.
+          required: true
+        - label: I’m using the latest released version (or current main).
+          required: true
+        - label: I read the README (installation, usage, FAQs).
+          required: true
+
+  - type: input
+    id: package-version
+    attributes:
+      label: astro-portal version
+      description: npm version (e.g. 1.0.0) or commit SHA
+      placeholder: 1.0.0
+    validations:
+      required: true
+
+  - type: input
+    id: astro-version
+    attributes:
+      label: Astro version
+      description: Output of `astro --version`
+      placeholder: 5.14.x
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - astro dev (watch mode)
+        - astro build (static)
+        - SSR adapter/runtime
+        - Client navigation (astro:page-load)
+        - Other / mixed
+    validations:
+      required: true
+
+  - type: input
+    id: node-version
+    attributes:
+      label: Node.js version
+      description: Output of `node --version`
+      placeholder: v20.x
+    validations:
+      required: false
+
+  - type: input
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: GitHub repo, StackBlitz, or steps to create a new Astro project that reproduces the issue.
+      placeholder: https://github.com/...
+    validations:
+      required: false
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear, concise description of the behavior; include observed vs. expected.
+      placeholder: Describe the problem clearly.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro-steps
+    attributes:
+      label: Steps to reproduce
+      description: Minimal, deterministic steps (links to public repros welcome).
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: snippets
+    attributes:
+      label: Code snippets / templates
+      description: Relevant Astro component snippets or template markup.
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs & CLI output
+      description: Include relevant output from `astro dev`, `astro build`, or the browser console.
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Links, screenshots, notes, etc.
+    validations:
+      required: false

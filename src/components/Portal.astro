@@ -1,0 +1,16 @@
+---
+const portalKey = Astro.props.key
+
+if (portalKey === undefined) {
+  throw new Error('[astro-portal] Portal requires a `key` prop.')
+}
+
+const keyValue = typeof portalKey === 'string' ? portalKey : String(portalKey)
+
+if (keyValue.trim().length === 0) {
+  throw new Error('[astro-portal] Portal requires a non-empty `key` prop.')
+}
+---
+<template data-astro-portal-source={keyValue}>
+  <slot />
+</template>

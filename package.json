@@ -1,0 +1,58 @@
+{
+    "name": "astro-create-portal",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Astro integration providing head-safe and keyed portal components for SSR and static builds.",
+    "author": {
+        "name": "Bl4cky99",
+        "email": "info@bl4cky.de",
+        "url": "https://github.com/Bl4cky99"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bl4cky99/astro-portal.git"
+    },
+    "homepage": "https://github.com/Bl4cky99/astro-portal#readme",
+    "bugs": {
+        "url": "https://github.com/Bl4cky99/astro-portal/issues/new?template=bug_report.yml"
+    },
+    "keywords": [
+        "astro",
+        "portal",
+        "head",
+        "metadata",
+        "ssr",
+        "static-site",
+        "integration"
+    ],
+    "license": "MIT",
+    "files": ["dist", "src/components", "README.md", "README_ASSETS"],
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        },
+        "./HeadPortal.astro": "./src/components/HeadPortal.astro",
+        "./CreatePortal.astro": "./src/components/CreatePortal.astro",
+        "./Portal.astro": "./src/components/Portal.astro"
+    },
+    "peerDependencies": {
+        "astro": "^5"
+    },
+    "devDependencies": {
+        "@types/jsdom": "^21.1.7",
+        "jsdom": "^25.0.0",
+        "typescript": "^5.9.2"
+    },
+    "scripts": {
+        "build": "tsc --project tsconfig.json",
+        "dev": "tsc --project tsconfig.json --watch",
+        "prepare": "bun run build"
+    },
+    "engines": {
+        "node": ">=18.17"
+    }
+}
